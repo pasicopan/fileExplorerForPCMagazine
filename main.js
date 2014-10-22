@@ -1,5 +1,5 @@
 ﻿
-var defaultPath = process.cwd();
+var defaultPath = 'C:';
 
 // golbal varialbes
 
@@ -18,6 +18,7 @@ if (process.platform == 'win32') {
 var AddressBar = require('address_bar').AddressBar;
 var Folder = require('folder_view').Folder;
 var Tree = require('tree_view').Tree;
+var Plus = require('plus_view').Plus;
 
 // main
 
@@ -28,6 +29,7 @@ $(document).ready(function () {
     var folder = new Folder($('#files'));
     var addressbar = new AddressBar($('#addressbar'));
     var tree = new Tree($('#tree'));
+    var plus = new Plus($('#plus'));
 
     function openDir(dir) {
         if (dir && dir.slice(-1) != path.sep) {
@@ -48,10 +50,13 @@ $(document).ready(function () {
     openDir(defaultPath);
 
     // register events
-
+    plus.on('navigate', function (filepath) {
+        folder.open(filepath);
+    });
     folder.on('navigate', function (filepath, type) {
         if (type == 'folder' || type == 'drive') {
             openDir(filepath);
+            plus.setPath(filepath,type);
         }
         else {
             shell.openItem(filepath);
@@ -68,6 +73,7 @@ $(document).ready(function () {
 
     if (process.platform == 'win32') {
         addressbar.on('select drive', function () {
+            console.log('on select drive')
             selectDrive();
         });
         tree.on('select drive', function () {
@@ -89,7 +95,7 @@ global.getPathData = function(dirPath) {
             path: win32.MY_COMPUTER_PATH,
         });
     }
-    
+
     // Split path into separate elements
     var sequence = dirPath.split(path.sep);
     for (var i = 0; i < sequence.length; ++i) {
