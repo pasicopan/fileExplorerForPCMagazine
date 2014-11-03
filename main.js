@@ -1,5 +1,6 @@
 ﻿
-var defaultPath = 'C:';
+// var defaultPath = 'C:';
+var defaultPath = 'D:/develop/magazine/2014/测试上传';
 
 // golbal varialbes
 
@@ -39,6 +40,7 @@ $(document).ready(function () {
         addressbar.set(dir);
         folder.open(dir);
         tree.navigate(dir);
+        plus.setPath(dir);
     }
 
     function selectDrive() {
@@ -51,7 +53,8 @@ $(document).ready(function () {
 
     // register events
     plus.on('navigate', function (filepath) {
-        folder.open(filepath);
+        // folder.open(filepath);
+        plus.setPath(filepath,type);
     });
     folder.on('navigate', function (filepath, type) {
         if (type == 'folder' || type == 'drive') {
