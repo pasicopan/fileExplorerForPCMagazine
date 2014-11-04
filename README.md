@@ -14,13 +14,7 @@ plan:
 1. 增加windows 的多盘支持c:/,d:/,e:/
 2. 增加文件管理器的插件栏，和相应的插件管理。所以的增强功能以插件方式安装。
 
-history:
---------
-20141013
- 处理在windows 平台下的BOM 问题，data = data.replace(/.*\{/,'{');
 
-20141013
- 寻找demo，fork from https://github.com/jareguo/file-explorer-demo
 
 
 thanks for:

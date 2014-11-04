@@ -1,6 +1,6 @@
 ﻿
 // var defaultPath = 'C:';
-var defaultPath = 'D:/develop/magazine/2014/测试上传';
+var defaultPath = window.localStorage.getItem('path')||'D:';
 
 // golbal varialbes
 

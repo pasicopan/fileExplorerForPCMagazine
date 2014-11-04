@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>File Explorer</title>
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -15,10 +16,11 @@
 <div style="position: absolute; left: 5px; right: 4px; top: 5px; bottom: 0px;">
     <div class="well" style="width: 100%;padding: 4px;height: 27px;">
         <div id="plus" style="height: 25px;">
-            <div class="plus_icon" path="Zip_dir">1</div>
-            <div class="plus_icon" path="UpdateArticle">2</div>
-            <div class="plus_icon">3</div>
-            <div class="plus_icon">4</div>
+            <div class="plus_icon" title="打包html,js,css 文件" action="Zip_dir">1</div>
+            <div class="plus_icon" title="更新文件夹" action="UpdateArticleFolder">2</div>
+            <div class="plus_icon" title="打包杂志交互文件" action="ZipInteractionFile">3</div>
+            <div class="plus_icon" title="上传杂志交互文件" action="UploadToCMS">4</div>
+            <div class="plus_icon" title="设置默认打开路径" action="RedirectPath">5</div>
         </div>
     </div>
     <div class="well" style="float: left; width: 160px; padding: 5px; position: absolute; left: 0px; right: 0px; top: 40px; bottom: 0px;">
