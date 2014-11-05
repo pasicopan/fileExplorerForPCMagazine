@@ -46,4 +46,5 @@ body {
   -webkit-filter: invert(20%);
 }
 
-.plus_icon{float: left;width: 30px;height: 30px;border-radius: 5px;list-style:none;background: #ddd;margin-right: 3px;}
+.plus_icon{float: left;width: 30px;height: 30px;border-radius: 5px;list-style:none;background: #ddd;margin-right: 3px;text-align: center;line-height: 30px;-webkit-user-select:none;}
+.plus_icon:hover{cursor:pointer;};
