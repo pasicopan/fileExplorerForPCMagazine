@@ -18,7 +18,9 @@ GOAL:
 5. 修改打开app 时的默认路径  
 6. 创建config.json 文件   
   
-  
+screenshot  
+----------  
+![screenshot](/screenshot.jpg "screenshot in Windows")
 安装
 ----
 1. 安装nodejs  
