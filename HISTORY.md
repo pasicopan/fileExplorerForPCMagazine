@@ -1,6 +1,6 @@
 history:
 --------
-20141105
+20141105  
 更新zip 包，不包含旧文件  
 增加提示：magazine.json 网址出错，压缩命令出错
 fix bug: config.json 文件增加"/"  
