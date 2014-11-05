@@ -11,7 +11,7 @@ GOAL:
 
 现在的功能  
 ----------  
-1. 压缩当前文件夹  
+1. 压缩当前文件夹(coming soon)  
 2. 更新cms 文章文件夹  
 3. 打包文件  
 4. 上传文件  
@@ -20,7 +20,8 @@ GOAL:
   
 screenshot  
 ----------  
-![screenshot](/screenshot.jpg "screenshot in Windows")
+![screenshot](/screenshot.jpg "screenshot in Windows")  
+  
 安装
 ----
 1. 安装nodejs  
