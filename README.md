@@ -24,7 +24,7 @@ GOAL:
 1. 安装nodejs  
 2. 下载 node-webkit  
 3. 使用node-webkit 打开项目的app.nw 文件  
-4. 可以简单GUI，开始使用  
+4. 可以看见GUI，开始使用  
 
 thanks for:  
 -----------  
