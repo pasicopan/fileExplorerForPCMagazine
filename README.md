@@ -30,6 +30,7 @@ screenshot
 2. 下载 node-webkit  
 3. 使用node-webkit 打开项目的app.nw 文件  
 4. 可以看见GUI，开始使用  
+5. 打包功能需要设置7z 的路径  
 
 thanks for:  
 -----------  

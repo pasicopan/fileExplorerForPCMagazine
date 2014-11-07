@@ -47,4 +47,10 @@ body {
 }
 
 .plus_icon{float: left;width: 30px;height: 30px;border-radius: 5px;list-style:none;background: #ddd;margin-right: 3px;text-align: center;line-height: 30px;-webkit-user-select:none;}
-.plus_icon:hover{cursor:pointer;};
+.plus_icon:hover{cursor:pointer;}
+.plus_icon.working{-webkit-animation:workingAnim 2s infinite;}
+@-webkit-keyframes workingAnim{
+  0%{background-color: #ddd;}
+  50%{background-color: yellow;}
+  100%{background-color: #ddd;}
+}
